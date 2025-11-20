@@ -1,28 +1,57 @@
 <!--IG 6th Color-->
-<!DOCTYPE HTML15>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Color Practice</title>
-        <meta charset="UTF-8">
-        <style>
-            div{
-                height: 200px;
-                width: 400px;
-                text-align: center;
-                background-color: rgb(217, 234, 243);
-            }
-        </style> 
-    </head>
-    <body>
-        <div id="analogous"
-        <p> Analogous Colors</p>
-        </div>
+<head>
+    <title>Color Practice</title>
+    <meta charset="UTF-8">
+    <style>
+        /* All boxes same size */
+        .color-box {
+            height: 200px;
+            width: 400px;
+            text-align: center;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            color: white;
+            font-weight: bold;
+            border: 4px solid black;
+        }
 
-        <div id="Complementary"
-        <p> Complementary Colors</p>
-        </div>
+        /* Analogous: green → yellow-green → yellow */
+        #analogous {
+            background: linear-gradient(to right, green, yellowgreen, yellow);
+            color: black;
+        }
 
-        <div id="Triadic"
-        <p> Triadic Colors</p>
-        </div>
+        /* Complementary: blue + orange */
+        #complementary {
+            background: linear-gradient(to right, blue, orange);
+        }
+
+        /* Triadic: red + blue + yellow */
+        #triadic {
+            background: linear-gradient(to right, red, blue, yellow);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="analogous" class="color-box">
+        Analogous Colors
+    </div>
+
+    <div id="complementary" class="color-box">
+        Complementary Colors
+    </div>
+
+    <div id="triadic" class="color-box">
+        Triadic Colors
+    </div>
+
+</body>
 </html>
