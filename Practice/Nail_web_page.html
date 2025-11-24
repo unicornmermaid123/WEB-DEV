@@ -52,9 +52,41 @@
             }
             
         </style>
+        <script>
+            function showMore(){
+            hidden = document.getElementById("hidden");
+            if (hidden.style.display === "none"){
+                hidden.style.display = "block";
+            } else {
+                hidden.style.display = "none";
+            }
+        }
+            function change(){
+                document.getElementById("one").src =  images[index]
+                index += 1
+                if (index >= images.length){
+                    index = 0
+                }
+
+            }
+            images = [
+                      "https://i.pinimg.com/474x/e7/0e/f6/e70ef6bda5e92c3ac905e049e0dcf63b.jpg",
+                      "https://i.pinimg.com/736x/27/ae/4c/27ae4cb13c789f8e5bc586596db152c6.jpg",
+                      "https://i.pinimg.com/736x/e7/00/d6/e700d6a50f892a1d7ea83ea48baddbcd.jpg"];
+                      index = 0 
+            function color(){
+                document.getElementById("first").style.color = "white"
+            }
+            function basic(){
+                document.getElementById("first").style.color = "rgb(204, 103, 128)"
+                alert("the background has been changed!")
+            }
+        </script>
         </head>
         <body>
-            <h1 id ="first"> ★⋆NAILS⋆★</h1>
+            <h1 id ="first" onmouseenter="color()" onmouseleave="basic()"> ★⋆NAILS⋆★</h1>
+            <input type="color" id="choice" name="choice" value="#f3d1d9">
+            <button onclick="document.body.style.backgroundColor=document.getElementById('choice').value">⋆⋆Change Background Color!⋆⋆</button>
             <div id="content-wrapper">
                 <div id="left"></div>
                 <div id="right"></div>
@@ -66,11 +98,11 @@
             </h6>
             <p>Hello!, My name is isabella and I enojoy doing nails as a hobby! I am 15 years old and i started at a very young age but not doing nails, I was in to crafts i loved using glue, colors and glitter. I made mini box houses for my barbie dolls i got  As in my art classes to say the least i was a very creative child and I still belive i am today! I started in the year 2023 when i was in 7th grade I would always see my mom doing her nails so i started aswell by no means I was good to be honest i was horrible! my lines were sloppy I would cut my cuticules so badly to the point where it was bleeding and it hurt so bad so i would paint over them to cover it and it was just horrible, and so sadly i gave up and just moved on and threw away all my old nail stuff. Then this year in the summer as a teenager does i was just scrolling on TikTok when i came across several videos of nails and day in the life of a nail tech and I saved them since i thought is was cool but then i moved on but they kept showing up and then i just started doing research and i went on amazon and spent all of my saved money on nail supplies.<br>
 
-            <h3>Then I got started!</h3>Once they got there i got straight to work and my first set was a summer seashell set in blue and when I went to work so many people would complement me on them, and even my friends asked me to do their nail and thats when i got the idea that i could to friends and familys nails as a small "buissness" idea so i got started.
-            </p>
+            <h3>Then I got started!</h3><div id = "hidden"></div>Once they got there i got straight to work and my first set was a summer seashell set in blue and when I went to work so many people would complement me on them, and even my friends asked me to do their nail and thats when i got the idea that i could to friends and familys nails as a small "buissness" idea so i got started.</div>
+            </p> <button>*+show more+*</button>
             <div id = "imgs">
-            <img id = "img" src="https://i.pinimg.com/736x/a9/f2/e1/a9f2e1d177474ccae1d1a56ee3e905c0.jpg" alt="nail set french tip and polkadots with ladybug" />
-            <img id = "one" src="https://i.pinimg.com/474x/e7/0e/f6/e70ef6bda5e92c3ac905e049e0dcf63b.jpg" alt="nail set french tip and swirly designs" /><br>
+            <img id = "img" src="https://i.pinimg.com/736x/a9/f2/e1/a9f2e1d177474ccae1d1a56ee3e905c0.jpg" alt="nail set french tip and polkadots with ladybug" onmouseover="(change())" />
+            <img id = "one" src="https://i.pinimg.com/474x/e7/0e/f6/e70ef6bda5e92c3ac905e049e0dcf63b.jpg" alt="nail set french tip and swirly designs"  /><br>
             <img id = "one" src="https://i.pinimg.com/736x/27/ae/4c/27ae4cb13c789f8e5bc586596db152c6.jpg" alt="nail set with white base and polka dots"/>
             <img id = "one" src="https://i.pinimg.com/736x/e7/00/d6/e700d6a50f892a1d7ea83ea48baddbcd.jpg" alt="pink nail set" /></div>
             <br><a href="https://www.pinterest.com/igerman2029/%2Bmy-work%2B/" target="_blank">⋆⋅☆⋅⋆𝒫𝒾𝓃𝓉𝑒𝓇𝑒𝓈𝓉 𝒷𝑜𝒶𝓇𝒹 𝑜𝒻 𝓈𝑜𝓂𝑒 𝑜𝒻 𝓂𝓎 𝓌𝑜𝓇𝓀!⋆⋅☆⋅⋆</a><br>
