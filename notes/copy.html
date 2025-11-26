@@ -1,77 +1,68 @@
-<!--IG 6th travel page-->
-<!DOCTYPE HTML15>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Beach- - - - - - ✈︎</title>
-        <meta charset="UTF-8">
-        <style>
-            body{
-                background-color: rgb(190, 231, 233);
-                font-family:  'Courier New', Courier, monospace;
-                color:rgb(138, 192, 196);
-            }
-            body{
-                background-color: rgb(190, 231, 233);
-                font-family:  'Courier New', Courier, monospace;
-                color:rgb(138, 192, 196);
-            }
-            .small{
-                font-size: 25px;
-                text-decoration: underline rgb(138, 192, 196);
-            }   #first{
-                text-align: center;
-                border: solid 5px rgb(255, 255, 255);
-                border-radius: 25px;
-                background-color: rgb(190, 231, 233);
-                box-shadow: 0cm 0cm 1cm rgb(255, 255, 255);
-            }
-            img{
-                height: 500px;
-                width: auto;
-                margin-right: 3px;
-            }
-            #left{
-                width: 50vw;
-            }
-            #content-wrapper{
-                display: flex;
-            }
-            #right{
-                width: 50vw;
-            }
-        </style>
-        </head>
-        <body>
-            <h1 id ="first">Beach- - - - - - ✈︎</h1>
-            <div id="content-wrapper">
-                <div id="left"></div>
-                <div id="right"></div>
-            </div>
-            <h2>By: 𝐼𝓈𝒶𝒷𝑒𝓁𝓁𝒶 𝒢𝑒𝓇𝓂𝒶𝓃</h2>
-            <h6 class="small">୨ৎOcean୨ৎ<br>
-        ⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪
-            </h6>
-            <p>Hello!, My name is isabella and I enojoy swimming and going to the beach! I love searching for the shells and just the calm feeling of the ocean
-            <div><h3 id = "hidden">𓇼 ⋆.˚ 𓆉 𓆝  𓆡⋆.˚ 𓇼Sea animals!𓇼 ⋆.˚ 𓆉 𓆝  𓆡⋆.˚ 𓇼</h3>
-            </div>
-            </p>
-            <img id = "img" src="https://i.pinimg.com/736x/7d/3e/a3/7d3ea30c3beccf039d5c89f44fbf4d12.jpg" alt="beach with shells" />
-            <img id = "one" src="https://i.pinimg.com/736x/9a/9a/28/9a9a28fdc8921e3fc9cfed53e2c60e2c.jpg" alt="soft sunset in the ocean" /><br>
-            <img id = "one" src="https://i.pinimg.com/736x/bb/c3/2e/bbc32e715c11379fd51f2645a3288b3e.jpg" alt="shells on a white background" /><br>
-            
-            <h4 id = "first">Nice places to visit</h4>
-            <ul>
-            <li>✮Dominican Republic✮</li>
-            <li>✮California✮</li>
-            <li>✮Bahamas✮</li>
-            <li>✮Jamaica✮</li>
-            <li>✮Mexico✮</li>
-            <li>✮Florida✮</li>
-            <li>✮Italy✮</li>
-            <li>✮Hawaii✮</li>
-            <li>✮Puerto Rico✮</li>
-            <li>✮Haiti✮</li>
-         </ul>
-        </body>
-    </head>
+<head>
+    <title>Beach</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-color: rgb(190, 231, 233);
+            font-family: 'Courier New', Courier, monospace;
+            color:rgb(138, 192, 196);
+        }
+        .small{
+            font-size: 25px;
+            text-decoration: underline rgb(138, 192, 196);
+        }
+        #first{
+            text-align: center;
+            border: solid 5px rgb(255, 255, 255);
+            border-radius: 25px;
+            background-color: rgb(190, 231, 233);
+            box-shadow: 0 0 1cm rgb(255, 255, 255);
+        }
+        img{
+            height: 500px;
+            width: auto;
+        }
+        #hiddenImage{
+            width:300px;
+            display:none;
+        }
+        #secret:hover + #hiddenImage{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="first">Beach</h1>
+
+<h2>By: Isabella German</h2>
+
+<h6 class="small">Ocean</h6>
+
+<p>Hello, my name is Isabella and I enjoy swimming and going to the beach. I love searching for shells and the calm feeling of the ocean.</p>
+
+<h3 id="secret">Sea Animals</h3>
+<img id="hiddenImage" src="https://i.pinimg.com/736x/52/8d/f4/528df49a2c3a1e942b25f6afa5e2363b.jpg" alt="hidden sea animal image">
+
+<img src="https://i.pinimg.com/736x/7d/3e/a3/7d3ea30c3beccf039d5c89f44fbf4d12.jpg" alt="beach with shells" />
+<img src="https://i.pinimg.com/736x/9a/9a/28/9a9a28fdc8921e3fc9cfed53e2c60e2c.jpg" alt="sunset ocean" />
+<img src="https://i.pinimg.com/736x/bb/c3/2e/bbc32e715c11379fd51f2645a3288b3e.jpg" alt="shells">
+
+<h4 id="first">Nice Places to Visit</h4>
+<ul>
+    <li>Dominican Republic</li>
+    <li>California</li>
+    <li>Bahamas</li>
+    <li>Jamaica</li>
+    <li>Mexico</li>
+    <li>Florida</li>
+    <li>Italy</li>
+    <li>Hawaii</li>
+    <li>Puerto Rico</li>
+    <li>Haiti</li>
+</ul>
+
+</body>
 </html>
