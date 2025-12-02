@@ -1,129 +1,140 @@
 <!--IG 6th Nail web page-->
-<!DOCTYPE HTML15>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>*+Nails+*</title>
-        <meta charset="UTF-8">
-         <style>
-            body{
-                background-color: rgb(243, 209, 217);
-                font-family:  'Courier New', Courier, monospace;
-                color:rgb(204, 103, 128);
-                
-            }
-            .small{
-                font-size: 25px;
-                text-decoration: underline rgb(226, 190, 199);
-            }   #first{
-                text-align: center;
-                border: solid 5px rgb(255, 255, 255);
-                border-radius: 25px;
-                background-color: rgb(235, 161, 193);
-                box-shadow: 0cm 0cm 1cm rgb(218, 49, 102);
-                
-            }
-            img{
-                height: 500px;
-                width: auto;
-                margin-right: 25px;
-                margin-left: 15px;
-                padding: 5px;
-                border: solid 3px rgb(255, 255, 255);
-                border-radius: 6px;
-                box-shadow: 0cm 0cm 1cm rgb(218, 48, 102);
-            }
-            #left{
-                width: 50vw;
-                padding: 20px;
-            }
-            #content-wrapper{
-                display: flex;
-                justify-content: space-between;
-            }
-            #right{
-                width: 50vw;
-                padding: 20px;
-            }
-            #imgs{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-
-            }
-        </style>
-        <script>
-            function hidden(){
-            hidden = document.getElementById("hidden");
-            if (hidden.style.display == "none"){
-                hidden.style.display = "block";
-            } else {
-                hidden.style.display = "none";
-            }
-
+<head>
+    <title>*+Nails+*</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-color: rgb(243, 209, 217);
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(204, 103, 128);
         }
-            function change(){
-                document.getElementById("one").src =  images[index]
-                index += 1
-                if (index >= images.length){
-                    index = 0
-                }
+        .small{
+            font-size: 25px;
+            text-decoration: underline rgb(226, 190, 199);
+        }   
+        #first{
+            text-align: center;
+            border: solid 5px rgb(255, 255, 255);
+            border-radius: 25px;
+            background-color: rgb(235, 161, 193);
+            box-shadow: 0cm 0cm 1cm rgb(218, 49, 102);
+        }
+        img{
+            height: 500px;
+            width: auto;
+            margin: 15px;
+            padding: 5px;
+            border: solid 3px rgb(255, 255, 255);
+            border-radius: 6px;
+            box-shadow: 0cm 0cm 1cm rgb(218, 48, 102);
+        }
+        #imgs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
 
-            }
-            images = [
-                      "https://i.pinimg.com/474x/e7/0e/f6/e70ef6bda5e92c3ac905e049e0dcf63b.jpg",
-                      "https://i.pinimg.com/736x/27/ae/4c/27ae4cb13c789f8e5bc586596db152c6.jpg",
-                      "https://i.pinimg.com/736x/e7/00/d6/e700d6a50f892a1d7ea83ea48baddbcd.jpg"];
-                      index = 0 
-            function color(){
-                document.getElementById("first").style.color = "white"
-            }
-            function basic(){
-                document.getElementById("first").style.color = "rgb(204, 103, 128)"
-                
-            }
-        </script>
-        </head>
-        <body>
-            <h1 id ="first" onmouseenter="color()" onmouseleave="basic()"> ★⋆NAILS⋆★</h1>
-            <input type="color" id="choice" name="choice" value="#f3d1d9">
-            <button onclick="document.body.style.backgroundColor=document.getElementById('choice').value">⋆⋆Change Background Color!⋆⋆</button>
-            <div id="content-wrapper">
-                <div id="left"></div>
-                <div id="right"></div>
-                <div id="img"></div>
-            </div>
-            <h2>By: 𝐼𝓈𝒶𝒷𝑒𝓁𝓁𝒶 𝒢𝑒𝓇𝓂𝒶𝓃</h2>
-            <h6 class="small">୨ৎI will be talking about my passion for nails!୨ৎ<br>
-        ────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ─────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ─────────୨ৎ──────
-            </h6>
-            <p>Hello!, My name is isabella and I enojoy doing nails as a hobby! I am 15 years old and i started at a very young age but not doing nails, I was in to crafts i loved using glue, colors and glitter. I made mini box houses for my barbie dolls i got  As in my art classes to say the least i was a very creative child and I still belive i am today! I started in the year 2023 when i was in 7th grade I would always see my mom doing her nails so i started aswell by no means I was good to be honest i was horrible! my lines were sloppy I would cut my cuticules so badly to the point where it was bleeding and it hurt so bad so i would paint over them to cover it and it was just horrible, and so sadly i gave up and just moved on and threw away all my old nail stuff. Then this year in the summer as a teenager does i was just scrolling on TikTok when i came across several videos of nails and day in the life of a nail tech and I saved them since i thought is was cool but then i moved on but they kept showing up and then i just started doing research and i went on amazon and spent all of my saved money on nail supplies.<br>
+    <script>
+        function toggleHidden(){
+            const hiddenSection = document.getElementById("hiddenSection");
+            const btn = document.getElementById("toggleBtn");
 
-            <div><h3 id = "hidden">Then I got started!</h3>Once they got there i got straight to work and my first set was a summer seashell set in blue and when I went to work so many people would complement me on them, and even my friends asked me to do their nail and thats when i got the idea that i could to friends and familys nails as a small "buissness" idea so i got started.</div>
-            </p> <button>*+show more+*</button>
-            <div id = "imgs">
-            <img id = "img" src="https://i.pinimg.com/736x/a9/f2/e1/a9f2e1d177474ccae1d1a56ee3e905c0.jpg" alt="nail set french tip and polkadots with ladybug" onmouseover="(change())" />
-            <img id = "one" src="https://i.pinimg.com/474x/e7/0e/f6/e70ef6bda5e92c3ac905e049e0dcf63b.jpg" alt="nail set french tip and swirly designs"  /><br>
-            <img id = "one" src="https://i.pinimg.com/736x/27/ae/4c/27ae4cb13c789f8e5bc586596db152c6.jpg" alt="nail set with white base and polka dots"/>
-            <img id = "one" src="https://i.pinimg.com/736x/e7/00/d6/e700d6a50f892a1d7ea83ea48baddbcd.jpg" alt="pink nail set" /></div>
-            <br><a href="https://www.pinterest.com/igerman2029/%2Bmy-work%2B/" target="_blank">⋆⋅☆⋅⋆𝒫𝒾𝓃𝓉𝑒𝓇𝑒𝓈𝓉 𝒷𝑜𝒶𝓇𝒹 𝑜𝒻 𝓈𝑜𝓂𝑒 𝑜𝒻 𝓂𝓎 𝓌𝑜𝓇𝓀!⋆⋅☆⋅⋆</a><br>
+            if(hiddenSection.style.display === "none"){
+                hiddenSection.style.display = "block";
+                btn.textContent = "*+hide+*";
+            } else {
+                hiddenSection.style.display = "none";
+                btn.textContent = "*+show more+*";
+            }
+        }
 
-            <a href="https://www.igelbeauty.com/blogs/lifestyle/10-practical-beginner-nail-tech-tips-from-the-great?srsltid=AfmBOoolDJVMUpuMzp6gDwEvoLibqnwfL5wD-nA-cY8GQERKRNK-VZoA" target="_blank">⋆⋅☆⋅⋆𝐻𝑒𝓇𝑒𝓈 𝒶 𝒽𝑒𝓁𝓅𝒻𝓊𝓁 𝓁𝒾𝓃k!⋆⋅☆⋅⋆</a>
-            <h4 id = "first">⋅˚₊‧ 𐙚 ‧₊˚ ⋅Some things I recommend buying if you wanna start!⋅˚₊‧ 𐙚 ‧₊˚ ⋅</h4>
-            <ul>
-            <li>✮UV nail lamp✮</li>
-            <li>✮20 gel polishs✮</li>
-            <li>✮design tools✮</li>
-            <li>✮3D gel✮</li>
-            <li>✮ nail gems/charms✮</li>
-            <li>✮nail tips✮</li>
-            <li>✮nail drill✮</li>
-            <li>✮nail files✮</li>
-            <li>✮nail glue✮</li>
-            <li>✮cuticule oil✮</li>
-            <li>✮base coat and top coat✮</li>
-            <li>✮nail buffer✮</li>
-            <li>✮nail cleanser✮</li>
-         </ul>
-        </body>
-    </head>
+        let images = [
+            "https://i.pinimg.com/474x/e7/0e/f6/e70ef6bda5e92c3ac905e049e0dcf63b.jpg",
+            "https://i.pinimg.com/736x/27/ae/4c/27ae4cb13c789f8e5bc586596db152c6.jpg",
+            "https://i.pinimg.com/736x/e7/00/d6/e700d6a50f892a1d7ea83ea48baddbcd.jpg"
+        ];
+        let index = 0;
+
+        function change(){
+            document.getElementById("hoverImg").src = images[index];
+            index++;
+            if(index >= images.length){
+                index = 0;
+            }
+        }
+
+        function color(){
+            document.getElementById("first").style.color = "white";
+        }
+        function basic(){
+            document.getElementById("first").style.color = "rgb(204, 103, 128)";
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="first" onmouseenter="color()" onmouseleave="basic()"> ★⋆NAILS⋆★</h1>
+
+    <input type="color" id="choice" name="choice" value="#f3d1d9">
+    <button onclick="document.body.style.backgroundColor=document.getElementById('choice').value">
+        ⋆⋆Change Background Color!⋆⋆
+    </button>
+
+    <h2>By: 𝐼𝓈𝒶𝒷𝑒𝓁𝓁𝒶 𝒢𝑒𝓇𝓂𝒶𝓃</h2>
+    
+    <h6 class="small">୨ৎI will be talking about my passion for nails!୨ৎ</h6>
+
+    <p>
+        Hello!, My name is isabella and I enjoy doing nails as a hobby! I am 15 years old…
+    </p>
+
+    <button id="toggleBtn" onclick="toggleHidden()">
+        *+show more+*
+    </button>
+
+    <div id="hiddenSection" style="display:none;">
+        <h3>Then I got started!</h3>
+        <p>
+            Once my supplies came in I got straight to work…
+        </p>
+
+        <img src="https://i.pinimg.com/736x/a9/f2/e1/a9f2e1d177474ccae1d1a56ee3e905c0.jpg" 
+             alt="Hidden nail set">
+    </div>
+
+    <div id="imgs">
+        <img id="hoverImg" 
+             src="https://i.pinimg.com/474x/e7/0e/f6/e70ef6bda5e92c3ac905e049e0dcf63b.jpg"
+             alt="hover to change" 
+             onmouseover="change()">
+
+        <img src="https://i.pinimg.com/736x/27/ae/4c/27ae4cb13c789f8e5bc586596db152c6.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/e7/00/d6/e700d6a50f892a1d7ea83ea48baddbcd.jpg" alt="">
+    </div>
+
+    <br>
+    <a href="https://www.pinterest.com/igerman2029/%2Bmy-work%2B/" target="_blank">Pinterest board</a><br>
+    <a href="https://www.igelbeauty.com/blogs/lifestyle/10-practical-beginner-nail-tech-tips-from-the-great?srsltid=AfmBOoolDJVMUpuMzp6gDwEvoLibqnwfL5wD-nA-cY8GQERKRNK-VZoA" target="_blank">Beginner tips</a>
+
+    <h4 id="first">⋅˚₊‧𐙚‧₊˚⋅Some things I recommend⋅˚₊‧𐙚‧₊˚⋅</h4>
+
+    <ul>
+        <li>✮UV nail lamp✮</li>
+        <li>✮20 gel polishes✮</li>
+        <li>✮design tools✮</li>
+        <li>✮3D gel✮</li>
+        <li>✮nail gems✮</li>
+        <li>✮nail tips✮</li>
+        <li>✮nail drill✮</li>
+        <li>✮nail files✮</li>
+        <li>✮nail glue✮</li>
+        <li>✮cuticle oil✮</li>
+        <li>✮base coat and top coat✮</li>
+        <li>✮nail cleanser✮</li>
+    </ul>
+
+</body>
 </html>

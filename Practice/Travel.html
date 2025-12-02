@@ -1,30 +1,68 @@
-<!--IG 6th HTML basics-->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Error Page</title>
-        <meta charset="UTF-8">
-        <style>
-            body {
-                text-align: center;
-                font-family: Arial, sans-serif;
-                background-color: #f2f2f2;
-                padding-top: 50px;
-            }
-            img {
-                width: 300px;
-                margin-top: 20px;
-            }
-        </style>
-    </head>
+<html lang="en">
+<head>
+    <title>Beach</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-color: rgb(190, 231, 233);
+            font-family: 'Courier New', Courier, monospace;
+            color:rgb(138, 192, 196);
+        }
+        .small{
+            font-size: 25px;
+            text-decoration: underline rgb(138, 192, 196);
+        }
+        #first{
+            text-align: center;
+            border: solid 5px rgb(255, 255, 255);
+            border-radius: 25px;
+            background-color: rgb(190, 231, 233);
+            box-shadow: 0 0 1cm rgb(255, 255, 255);
+        }
+        img{
+            height: 500px;
+            width: auto;
+        }
+        #hiddenImage{
+            width:300px;
+            display:none;
+        }
+        #secret:hover + #hiddenImage{
+            display:block;
+        }
+    </style>
+</head>
+<body>
 
-    <body>
-        <h1><strong>Oops! Something Went Wrong</strong></h1>
-        <p>This page can't be found. It might be missing, moved, or the link was typed wrong.</p>
+<h1 id="first">Beach</h1>
 
-        <img src="https://i.pinimg.com/736x/58/f2/63/58f26311cf3a0d7e94faf74a16ba2fb6.jpg" 
-             alt="Error image">
+<h2>By: Isabella German</h2>
 
-        <h3>Please check the URL or return to the homepage.</h3>
-    </body>
+<h6 class="small">Ocean</h6>
+
+<p>Hello, my name is Isabella and I enjoy swimming and going to the beach. I love searching for shells and the calm feeling of the ocean.</p>
+
+<h3 id="secret">Sea Animals</h3>
+<img id="hiddenImage" src="https://i.pinimg.com/736x/05/c4/d1/05c4d1aaa5fc0f6f7b475f3bb43b0a81.jpg" alt="hidden sea animal image">
+
+<img src="https://i.pinimg.com/736x/7d/3e/a3/7d3ea30c3beccf039d5c89f44fbf4d12.jpg" alt="beach with shells" />
+<img src="https://i.pinimg.com/736x/9a/9a/28/9a9a28fdc8921e3fc9cfed53e2c60e2c.jpg" alt="sunset ocean" />
+<img src="https://i.pinimg.com/736x/bb/c3/2e/bbc32e715c11379fd51f2645a3288b3e.jpg" alt="shells">
+
+<h4 id="first">Nice Places to Visit</h4>
+<ul>
+    <li>Dominican Republic</li>
+    <li>California</li>
+    <li>Bahamas</li>
+    <li>Jamaica</li>
+    <li>Mexico</li>
+    <li>Florida</li>
+    <li>Italy</li>
+    <li>Hawaii</li>
+    <li>Puerto Rico</li>
+    <li>Haiti</li>
+</ul>
+
+</body>
 </html>
