@@ -10,6 +10,7 @@ def home():
         return redirect(url_for("user", name=request.form["name"]))
     return render_template("index.html") 
 
+@app.route("/about")
 def about():
     return "<h1>Hello!</h1>"
 
@@ -19,7 +20,7 @@ def contact():
 
 @app.route("/<name>")
 def user(name):
-    return f"<h1>Hello, {name}!</h1>"
+    return render_template("user.html")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block content %}{% endblock %}</title>
+    <style>
+        #nav{
+            border-color: rgb(127, 196, 184);
+            border-width: 2px;
+        }
+        img{
+            width:300px;
+        }
+        #nav a{
+            text-decoration: none;
+            color: rgb(94, 197, 197);
+            font-weight: bold;
+
+        }
+        #nav a:hover{
+            color: rgb(72, 199, 199);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flask site</h1>
+    <div id="nav">
+        <a href="/home">Home</a> <p>  </p>
+        <a href="/about">About</a> <p> </p>
+        <a href="/contact">Contact</a> <p> </p>
+    </div>
+    {% block body %}{% endblock %}
+</body>
+</html>
