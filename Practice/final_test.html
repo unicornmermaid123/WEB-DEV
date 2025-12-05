@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>☃️❄︎Skiing❄︎☃️</title>
+     
+    <style>
+        body {
+            body {
+            background-color: rgb(174, 211, 227);
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(110, 168, 185);
+            margin: 0;
+            padding: 0;
+        }                    
+        }
+       
+        h1, h4 {
+            text-align: center;
+            border: solid 5px rgb(255, 255, 255);
+            border-radius: 25px;
+            background-color: rgb(195, 221, 230);
+            box-shadow: 0cm 0cm 1cm rgb(49, 179, 218);
+            padding: 20px;
+        }
+       
+        .small {
+            font-size: 25px;
+            text-decoration: underline rgb(255, 255, 255);
+            text-align: center;
+            margin: 10px 0;
+        }
+                p {
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+
+       
+        .box {
+            background-color: rgb(196, 230, 230);
+            padding: 25px;
+            border-radius: 15px;
+        }
+         
+        #content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        #content-wrapper div {
+            flex: 1 1 400px;
+            padding: 10px;
+        }
+       
+        img {
+            height: 180px;
+            border-radius: 12px;
+            margin: 15px;
+            transition: 0.3s;
+        }
+
+        a { color: #79b8c9fd; }
+
+       
+        #extraSection {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .pic-switch:hover {
+            content: url(https://localadventurer.com/wp-content/uploads/2020/12/vortex-hike-st-george.jpg);
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="all">
+    <h1>☃️❄︎Skiing in Park City❄︎☃️</h1>
+   
+    <div class="box">
+        <h2>What's so good about St. George?</h2>
+        <p>
+            St. George is a veyr popular vactaion location for people in Utah, me personally I visit there almost every year!
+            The weather is hot which makes it a very good spot for winter time(maybe skip during summer time).
+            I enjoy going there because it's the tropical side of utah.
+            Utah is a desert but lakcs some of the desert qualities, which is why St. George is my personal pick for a vacation!
+        </p>
+    </div>
+   
+    <div class="box">
+        <h2>Best times to go</h2>
+        <p>
+        The best time to go to St. George is during winter break, spring break and fall break.
+        St george is a good place to go to besides from summer, the main reason being that it's EXTREMELY hot.
+        St. George set the record for the highest heat in Utah ever at 47.2 degreees celsius!(117 degrees farenheit).
+        </p>
+         <img src="https://ctfassets.ksldigital.com/0wjmk6wgfops/1VRI2xbCKohC93LLlGf4sJ/f9769b2970746171a8555fd00f2364bc/dffb6e5967_9faaba72-25ad-42d3-99dc-056f2fc231e7.jpg?w=1280&h=800&fit=fill&f=center&q=80" alt="Water body" height="50px">
+
+       
+
+        <img src="https://utahguide.com/wp-content/uploads/2023/07/Saint-George-Utah-1200-D.jpg" alt="Moutains" height="50px">
+        <br>
+        <img src="https://images.ctfassets.net/0wjmk6wgfops/1N5EjGJ8Ce2ntxbTtUVfkY/a70bd275b8be7725fc48fc95e86f287a/AdobeStock_615586339.jpeg?w=1200&h=630&f=center&fit=fill" alt="more Mountains" height="50px">
+       
+
+        <img class="pic-switch" src="https://www.freshoffthegrid.com/wp-content/uploads/2016/06/Overlooking-Snow-Canyon-State-Park-near-St.-George-Utah.jpg" alt="St. George">
+        <br>
+        <a href="https://greaterzion.com/a-brief-history-of-the-establishment-of-st-george-utah/" target="_blank">
+        St. George history
+        </a>
+    </div>
+   
+    <div class="box">
+        <h1>Best reasons to visit</h1>
+        <ol>
+            <li>Relaxing weather</li>
+            <li>Tropical climate</li>
+            <li>Tourist town</li>
+            <li>Pretty scenery</li>
+            <li>Mountains</li>
+        </ol>
+    </div>
+
+    <div class="box">
+        <button onclick="toggleExtra()" style="padding:10px 20px; font-size:18px; border-radius:10px;">
+            Show More
+        </button>
+
+        <div id="extraSection">
+            <p>
+            Bring sunscreen, hats, clothes and WATER.
+            </p>
+            <img src= https://i5.walmartimages.com/asr/b5bc06f5-7208-4e64-ba92-7be43b474d16.5cbc4d93cd2d649a66a73b9e7250dc05.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF alt="water image">
+    </div>
+   
+    <div class="box">
+        <p>Created by Charlie Cogswell</p>
+    </div>
+</div>
+
+<script>
+    function toggleExtra() {
+        const section = document.getElementById("extraSection");
+        const button = event.target;
+
+        if (section.style.display === "none") {
+            section.style.display = "block";
+            button.textContent = "Hide";
+        } else {
+            section.style.display = "none";
+            button.textContent = "Show More";
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
+

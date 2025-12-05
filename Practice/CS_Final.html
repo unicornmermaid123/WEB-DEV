@@ -42,6 +42,7 @@
             flex: 1 1 400px;
             padding: 10px;
         }
+            
         img {
             width: 400px;
             height: 300px;
@@ -69,6 +70,9 @@
             color: white;
             cursor: pointer;
         }
+        .pic-switch:hover {
+            content: url(https://i.pinimg.com/736x/13/5c/29/135c29f58d22f482047785098d4b6185.jpg);
+        }
         
     </style>
 </head>
@@ -90,12 +94,11 @@
         <img src="https://i.pinimg.com/736x/13/5c/29/135c29f58d22f482047785098d4b6185.jpg" alt="Ski lift">
     </div>
 
-    <button id="toggleBtn">More Info</button>
-    <div id="moreInfo">
+    
         <p>
             Park City is not just about skiing! You can enjoy breathtaking mountain views, local festivals, and the rich history of this former mining town. Don't forget to check out the ski schools, equipment rentals, and family-friendly activities that make it a perfect vacation spot.
         </p>
-        <img src="https://i.pinimg.com/736x/8b/97/84/8b9784beb9653b0ac57d94f39a74dace.jpg" alt="Ski resort lodge">
+        <img class="pic-switch" src = "https://i.pinimg.com/736x/8b/97/84/8b9784beb9653b0ac57d94f39a74dace.jpg" alt="Ski resort lodge">
         <img src="https://i.pinimg.com/1200x/b0/a1/dd/b0a1dd4625559fa37a1f036d1126c751.jpg" alt="Skiing down a mountain">
         <img src="https://i.pinimg.com/736x/9e/75/f5/9e75f55e5bc707273ff16638dba86035.jpg" alt="Ski lift and mountains">
     </div>
@@ -116,26 +119,36 @@
         <li>❄︎ Events & Festivals</li>
     </ul>
 
-    <script>
-        const toggleBtn = document.getElementById('toggleBtn');
-        const moreInfo = document.getElementById('moreInfo');
-        toggleBtn.addEventListener('click', () => {
-            if (moreInfo.style.display === "none") {
-                moreInfo.style.display = "block";
-                toggleBtn.textContent = "Hide Info";
-            } else {
-                moreInfo.style.display = "none";
-                toggleBtn.textContent = "More Info";
-            }
-        });
+   <div class="box">
+        <button onclick="toggleExtra()" style="padding:10px 20px; font-size:18px; border-radius:10px;">
+            Show More
+        </button>
 
-        const hoverImg = document.getElementById('hoverImg');
-        hoverImg.addEventListener('mouseover', () => {
-            hoverImg.src = 'https://i.pinimg.com/736x/13/5c/29/135c29f58d22f482047785098d4b6185.jpg';
-        });
-        hoverImg.addEventListener('mouseout', () => {
-            hoverImg.src = 'https://i.pinimg.com/1200x/11/2a/b2/112ab29651d184f02b78d39d675c1d48.jpg';
-        });
-    </script>
+        <div id="extraSection">
+            <p>
+            Park City is not just about skiing! You can enjoy breathtaking mountain views, local festivals, and the rich history of this former mining town. Don't forget to check out the ski schools, equipment rentals, and family-friendly activities that make it a perfect vacation spot.
+            </p>
+            <img src= "https://i.pinimg.com/736x/8b/97/84/8b9784beb9653b0ac57d94f39a74dace.jpg" alt="Ski resort lodge">
+   
+    <div class="box">
+    </div>
+</div>
+
+<script>
+    function toggleExtra() {
+        const section = document.getElementById("extraSection");
+        const button = event.target;
+
+        if (section.style.display === "none") {
+            section.style.display = "block";
+            button.textContent = "Hide";
+        } else {
+            section.style.display = "none";
+            button.textContent = "Show More";
+        }
+    }
+</script>
+
 </body>
 </html>
+
